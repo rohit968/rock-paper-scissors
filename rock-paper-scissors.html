@@ -10,43 +10,61 @@
 	function computerPlay() {
 		let words = ['rock', 'paper', 'scissors']
 		let number = Math.floor(Math.random() * words.length)
-		let word = words[number]
-		alert(word)
-		return word
+		return words[number]
 	}
 
 	function playRound(userSelection, compSelection) {
+		let countUser = countComp = 0
 		if (userSelection == "rock") {
 			if (compSelection == "rock") {
 				alert("Match Draw")
 			} else if (compSelection == "paper") {
-				alert("Copm Wins")
+				alert("Computer Wins this round")
+				countComp++
 			} else {
-				alert("User Wins")
+				alert("You win this round")
+				countUser++
 			}
 		} else if (userSelection == "paper") {
 			if (compSelection == "rock") {
-				alert("User Wins")
+				alert("You win this round")
+				countUser++
 			} else if (compSelection == "paper") {
 				alert("Match Draw")
 			} else {
-				alert("Comp Wins")
+				alert("Computer wins this round")
+				countComp++
 			}
 		} else {
 			if (compSelection == "scissors") {
 				alert("Match Draw")
 			} else if (compSelection == "paper") {
-				alert("User Wins")
+				alert("You win this round")
+				countUser++
 			} else {
-				alert("Comp Wins")
+				alert("Computer wins this round")
+				countComp++
 			}
 		}
 	}
-
-	let userSelection = prompt("Enter your choice, Rock, Paper, Scissors").toLowerCase()	
-	let compSelection = computerPlay()
-	console.log(playRound(userSelection, compSelection))	
 	
+	function game() {
+		let game = countUser = countComp = 0
+		while (game < 5) {
+			let userSelection = prompt("Enter your choice, Rock, Paper, Scissors").toLowerCase()	
+			let compSelection = computerPlay()
+			console.log(playRound(userSelection, compSelection, countUser, countComp))
+			game++
+		}
+		if (countUser > countComp) {
+			alert("You win the Tournament")
+		}
+		else {
+			alert("Computer wins the Tournament")	
+		}
+	}
+	
+	game()
 			 
   </script>
 </body>
