@@ -1,0 +1,73 @@
+html {
+	background-color: navy;
+	color: orange;
+}
+
+.heading {
+	text-align: center;
+	letter-spacing: 10px;
+	margin-top: 50px;
+	font-size: 30px;
+}
+
+.content {
+	text-align: center;
+	font-size: 20px;
+}
+
+.scores {
+	width: 50rem;
+	margin-left: 23rem;
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 20px
+}
+
+.gameChoices {
+	width: 50rem;
+	margin-left: 23rem;
+	margin-top: 70px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.gameChoices i {
+	color: navy;
+}
+
+.gameChoices button {
+	padding: .4em;
+	border-radius: 50%;
+	border: none;
+	background-color: orange;
+	border: none;
+}
+
+.gameChoices button:hover {
+	cursor: pointer;
+}
+
+.displayChoices {
+	width: 60rem;
+	margin-left: 23rem;
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 20px
+}
+
+.win-win {
+	width: 50rem;
+	margin-left: 23rem;
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 20px
+
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock|Paper|Scissor</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<header>
+		<div class="heading">
+			<h1>ROCK|PAPER|SCISSOR</h1>
+		</div>
+	</header>
+
+	<div class="content">
+		This is a tournament of rock-paper-scissor. The player to win 5 matches first will be the winner of the tournament.
+	</div>
+
+	<div class="scores">
+		<h2 class="playerScore">Your Score: 0</h2>
+		<h2 class="compScore">Computer Score: 0</h2>
+	</div>
+
+	<div class="gameChoices">
+		<button id="rock" type="button"><i class="fa fa-hand-rock-o fa-4x choices" aria-hidden="true"></i></button>
+		<button id="paper" type="button"><i class="fa fa-hand-paper-o fa-4x choices" aria-hidden="true"></i></button>
+		<button id="scissors" type="button"><i class="fa fa-hand-scissors-o fa-4x choices" aria-hidden="true"></i></button>
+	</div>
+
+	<div class="displayChoices">
+		<h2 class="playerChoice"></h2>
+		<h2 class="computerChoice"></h2>
+	</div>
+
+	<div class="win">
+		<h2 class="win-win"></h2>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
